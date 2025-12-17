@@ -7,9 +7,12 @@ RとPythonのコードを相互に理解するためのプラットフォーム�
 
 仕様技術
 ---
-フロントエンド:Astro
-フォーマッター: Prettier
-CSSフレームワーク: Tailwind Css
+フロントエンド:Astro 
+
+フォーマッター: Prettier 
+
+CSSフレームワーク: Tailwind Css 
+
 CI / CD: GitHub Actions
 
 お問い合わせ
