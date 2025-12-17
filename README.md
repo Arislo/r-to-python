@@ -1,1 +1,1 @@
-# r-to-python
+# RとPythonでデータ分析を行う記事を掲載します
