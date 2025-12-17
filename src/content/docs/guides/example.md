@@ -47,3 +47,64 @@ var fun = function lang(l) {
   return true;
 };
 ```
+
+```js {2-3}
+function demo() {
+  // この行（2行目）と次の行はハイライトされます
+  return "このスニペットの3行目です";
+}
+```
+
+```js "個別の用語" /正規表現.*います/
+// 個別の用語もハイライトできます
+function demo() {
+  return "正規表現もサポートされています";
+}
+```
+
+```js "return true;" ins="挿入" del="削除"
+function demo() {
+  console.log("これらは挿入と削除のマーカーです");
+  // return文はデフォルトのマーカータイプを使用します
+  return true;
+}
+```
+
+```diff lang="js"
+  function thisIsJavaScript() {
+    // このブロック全体はJavaScriptとしてハイライトされますが、
+    // diffマーカーの追加も可能です！
+-   console.log('削除される古いコード')
++   console.log('新しいキラキラコード！')
+  }
+```
+
+```js
+// my-test-file.js
+console.log("Hello World!");
+```
+
+```bash title="依存関係のインストール中…"
+npm install
+```
+
+```bash frame="none"
+echo "bash言語を使用していますが、これはターミナルとしてレンダリングされません"
+```
+
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+
+Here's a sentence with a footnote. [^1]
+
+[^1]: This is the footnote.
+
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
+
+That is so funny! 😂
+
+> blockquote
