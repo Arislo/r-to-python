@@ -8,22 +8,25 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Py-R",
-			tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 },
+      lastUpdated: true,
+      tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 },
       customCss: ["./src/styles/custom.css"],
       social: [
         { icon: "github", label: "GitHub", href: "https://github.com/Arislo" },
       ],
       sidebar: [
         {
-          label: "Guides",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: "Example Guide", slug: "guides/example", badge: "new" },
-          ],
+          label: "はじめに",
+          autogenerate: { directory: "about" },
         },
         {
-          label: "Reference",
-          autogenerate: { directory: "reference" },
+          label: "分析レポート",
+          badge: "new",
+          autogenerate: { directory: "analysis" },
+        },
+        {
+          label: "付録",
+          autogenerate: { directory: "appendix" },
         },
       ],
     }),
