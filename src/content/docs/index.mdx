@@ -1,16 +1,14 @@
 ---
-title: ようこそ！
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: Py-R
+description: PythonとRでデータ分析を行う
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  tagline: PythonとRでデータ分析を行う
   actions:
-    - text: Example Guide
+    - text: はじめる
       link: /about/started/
       icon: right-arrow
-    - text: Read the Starlight docs
+    - text: このサイトはAstroのstarlightで構築しました。
       link: https://starlight.astro.build
       icon: external
       variant: minimal
@@ -18,23 +16,22 @@ hero:
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## このサイトについて
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="PythonとRの比較" icon="translate">
+		RとPythonを比較したい、書き換えたいときのためにコードを書きました。
 	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
+	<Card title="RとPythonの環境構築" icon="setting">
+		環境構築についてを紹介しています
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="データの前処理" icon="random">
+		Excelといった外部データの読み込み、欠損値の扱い、型の変更を行います。
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="データの可視化・分析" icon="star">
+		t検定や重回帰分析、EDAを取り扱っています。
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="付録" icon="pen">
+		気になったものを集めています。
 	</Card>
 </CardGrid>

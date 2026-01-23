@@ -9,7 +9,7 @@ export default defineConfig({
     starlight({
       title: "Py-R",
       lastUpdated: true,
-      tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 },
+      tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 },
       customCss: ["./src/styles/custom.css"],
       social: [
         { icon: "github", label: "GitHub", href: "https://github.com/Arislo" },

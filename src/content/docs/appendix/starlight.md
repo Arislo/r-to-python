@@ -1,15 +1,15 @@
 ---
-title: Example Guide
+title: ---
 description: A guide in my new Starlight docs site.
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
-Writing a good guide requires thinking about what your users are trying to do.
+こちらは著者がコピペできるようにおいてあるものです。
 
-## Further reading
+## リンク
 
 - Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
 
+## Note
 :::note
 Starlight は、[Astro](https://astro.build/)製のドキュメントサイト用ツールキットです。次のコマンドではじめられます。
 
