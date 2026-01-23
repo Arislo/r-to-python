@@ -1,0 +1,42 @@
+---
+title: "外部ライブラリ"
+description: "ライブラリの説明"
+---
+
+```r
+#外部ライブラリのインストール
+install.packages("ライブラリ名")
+#例
+install.packages("tidyverse")
+#使用するとき
+library("ライブラリ名")
+#例
+library("tidyverse")
+
+#一行で書きたい
+pacman::p_load("ライブラリ名")
+#例
+pacman::p_load(dplyr, tidyr, dbplyr, magrittr, ggplot2)
+```
+## tidyverse
+データサイエンスをする上で必要なものが全部入っている
+
+入っているパッケージ一覧
+- ggplot2
+- dplyr
+- tidyr
+- readr
+- purrr
+- tibble
+- stringr
+- forcats
+- lubridate
+
+## dplyr
+データの前処理に使われる
+
+## ggplot2
+グラフ描画に使われる
+
+## modelsummary
+回帰分析の表を見やすくする
