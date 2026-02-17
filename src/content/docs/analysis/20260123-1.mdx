@@ -2,6 +2,8 @@
 title: "前処理"
 description: "分析する前に"
 ---
+import { LinkCard } from '@astrojs/starlight/components';
+
 データの読み込みについて、標準ライブラリと外部ライブラリ（readr）があります。  
 高速なのは外部ライブラリ（readr）です。
 readrはtidyverseに入っているため、新たに入れる必要はありません。
@@ -16,22 +18,30 @@ df = read.csv("csvファイル")
 ```
 
 ## データの読み込み（外部ライブラリ:readr）
-"."が"_"になっています。
+注意）"."が"_"になっています。
 ```r
 read_csv("csvファイル")
 df = read_csv("csvファイル")
 ```
-*ほかの形式を読み込みたいとき
-SPSSやStata、SASを読み込みたいときは、havenパッケージ  
-Excelを読み込みたいときはreadxlパッケージを使います。
+*ほかの形式を読み込みたいとき（ex: SPSSやStata、SAS）を読み込みたいときは、  
+havenパッケージ、Excelを読み込みたいときはreadxlパッケージを使います。
 
+こちらのサイトが詳しいことを書いています。
+<LinkCard
+  title="readr.tidyverse.org"
+  href="https://readr.tidyverse.org/"
+/>
 ## 型を確認したいとき
 ```r
 str(データフレーム名)
 ```
-もしくはRstdioの場合、自分でデータを変数名で定義すると、右上のタブで▽をクリックすると型と最初の10行を見ることができます。
+Rstdioの場合、右上の「Environment」タブで▽（変数名）をクリックすると、型や最初の数行を確認できます。
 ## 名前の変更、型の変更をしたいとき
-読み込まれた型を変更したいときはas_型名で可能。
+読み込まれた型を変更したいときはas_型名を使います。
 ```r
-
+as.character(変数名) #文字列に変換
+as.numeric(変数名)
+as.integer(変数名)
+as.factor(変数名)
+as.logical(変数名)
 ```
