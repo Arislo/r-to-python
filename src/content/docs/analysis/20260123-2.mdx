@@ -3,4 +3,22 @@ title: "基本統計量"
 ---
 ```r
 summary("データフレーム名")
+
+# 変数
+#Min.   : 最小値
+#1st Qu.: 第1四分位数
+#Median : 中央値
+#Mean   : 平均値
+#3rd Qu.: 第3四分位数
+#Max.   : 最大値
+#NA's   : 欠損値
 ```
+標準ライブラリです。各変数ごとに表をまとめます。
+
+```r
+df %>%
+  descr(stats = c("mean", "sd", "min", "max", "n.valid"), transpose = TRUE)
+```
+DescToolsパッケージで各変数を**１つの表**にまとめてくれます。
+transpose = Trueで行列を回転できます。
+これをそのままExcelで張り付けることができるので便利です。

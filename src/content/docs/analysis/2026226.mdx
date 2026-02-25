@@ -1,0 +1,18 @@
+---
+title: "回帰分析"
+---
+
+```r
+lm(被説明変数 ~ 説明変数, data = データフレーム名) <- 単回帰分析
+model名 = データフレーム名 = lm(被説明変数 ~ 説明変数① + 説明変数②..., data = データフレーム) <- 重回帰分析
+
+
+summary(model名)
+summary(model名, conf_level = .95) <-信頼区間の設定
+
+#modelsummaryパッケージ
+msummary(model名, conf_level = .95, gof_omit = 'AIC|BIC|Log.Lik.|F')
+```
+切片と傾きを求めてくれます。
+summary()を使うと、Std. Error（標準誤差）, t value（t値）, Pr(>|t|)（p値）といった詳細を見ることができます。
+msummary(を使うと)表の画像を出力してくれます。
