@@ -4,7 +4,7 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://pyr.io",
+  site: "https://arislo.github-io/r-to-python",
   integrations: [
     starlight({
       title: "Py-R",
